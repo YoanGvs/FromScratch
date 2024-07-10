@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  border: red 1px inset;
 }
 
 /************* Body *************/
@@ -54,3 +55,98 @@ h1 {
   border: white 1px solid;
   font-size: 0.7rem;
 }
+
+/* *************** Header-text ************* */
+
+.header-text {
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 6% 6%;
+}
+
+/* *************** icon-part ************ */
+.icon-part-container {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-icon-part {
+  display: flex;
+  padding: 10px 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-icon-part p {
+  font-size: 0.6rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 6%;
+}
+
+.list-icon-part h3 {
+  text-transform: uppercase;
+  padding: 10% 0 0 0;
+}
+
+.list-icon-part button {
+  background: #33333300;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px 0 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: white 1px solid;
+  font-size: 0.7rem;
+}
+
+/* *************** NEWS-PART ************ */
+
+.left-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-part h2 {
+  text-transform: uppercase;
+  padding: 15% 0 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.left-part p {
+  font-size: 0.5rem;
+  padding: 0% 23% 0 1%;
+  align-self: start;
+  font-weight: 900;
+}
+
+/* *************** RIGHT-PART ************ */
+
+.right-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-part button {
+  color: black;
+  background: white;
+  border: black 2px solid;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+.right-part i {
+  padding: 0 0 0 10px;
+}
+
+/* *********** MAIN-NEWS ************ */

@@ -141,3 +141,42 @@ footer img {
     align-items: center;
   }
 }
+
+
+/* ************** ANIMATION *************** */
+/* Ajouter ce CSS pour styliser les ronds */
+.small-circle {
+    background-color: red;
+    z-index: 2;
+}
+
+.medium-circle {
+    background-color: green;
+    z-index: 1;
+}
+
+.large-circle {
+    background-color: blue;
+    z-index: 0;
+}
+
+/* Ajouter ce CSS pour styliser les ronds */
+.small-circle {
+    background-color: red;
+}
+
+.medium-circle {
+    background-color: white;
+    mix-blend-mode: SCREEN; /* Transparence pour les plus gros ronds */
+}
+
+.large-circle {
+    background-color: blue;
+    mix-blend-mode: screen; /* Transparence pour les plus gros ronds */
+}
+
+/* Ajouter ce CSS pour styliser le cercle de la souris */
+.mouse-circle {
+  background-color: red;
+  pointer-events: none; /* Empêcher les interactions avec le cercle */
+}

@@ -16,6 +16,8 @@ a:visited {
   color: white;
   text-decoration: none;
   transition: 0.3s;
+  z-index: 1000;
+  position: relative;
 }
 a:hover {
   font-size: 1.3rem;
@@ -25,6 +27,30 @@ body {
   background: rgb(27, 27, 27);
   color: rgb(246, 246, 246);
   min-height: 100vh;
+  cursor: none;
+}
+.mouse {
+  position: absolute;
+  border-radius: 1500px;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+#cursor {
+  background: #2128bd;
+  width: 14px;
+  height: 14px;
+}
+#mouse1 {
+  height: 100px;
+  width: 100px;
+  background: white;
+  transition: 0.15s ease-out;
+}
+#mouse2 {
+  height: 200px;
+  width: 200px;
+  background: rgb(41, 41, 41);
+  transition: 0.25s ease-out;
 }
 nav {
   display: grid;
@@ -140,26 +166,4 @@ footer img {
   .footer-left ul {
     align-items: center;
   }
-}
-
-/* ************** CIRCLE *************** */
-
-/* Ajouter ce CSS pour styliser les ronds */
-.small-circle {
-  background-color: red;
-}
-
-.medium-circle {
-  background-color: white;
-  mix-blend-mode: difference; /* Transparence pour les plus gros ronds */
-}
-
-.large-circle {
-  background-color: grey;
-  mix-blend-mode: screen; /* Transparence pour les plus gros ronds */
-}
-
-/* Ajouter ce CSS pour styliser le cercle de la souris */
-.mouse-circle {
-background-color: black;
 }
